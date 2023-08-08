@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Perbaikan Panjang Password tidak bisa lebih dari 50
+# Makasih sudah baca notice ini :) 
+
 r='\033[0;31m' # red
 g='\033[0;32m' # green
 n='\033[0m' # no color
@@ -36,6 +39,9 @@ while [[ $# -gt 0 ]]; do
     case $key in
         -p)
         LENGTH="$2"
+        if [[ $LENGTH -gt 50 ]]; then
+            LENGTH=50
+        fi
         shift
         shift
         ;;
