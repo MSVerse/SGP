@@ -22,7 +22,7 @@ show_help() {
     echo "-n [ use numbers ]"
     echo "-s [ use symbols ]"
     echo "-ac [ use all characters ]"
-    echo "bash sgp.sh -p 10 -u use -l use -s use -n use -ac use"
+    echo "bash sgp.sh -p 10 -u use -l use -s use -n use"
 }
 
 show_information() {
